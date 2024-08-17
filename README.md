@@ -17,18 +17,28 @@ Question 2: Project Explanation Describe a coding project you've worked on. Shar
 
 ->
 This Python-based weather application, hosted on GitHub at https://github.com/Stothedoublek/weatherapp, fetches real-time weather data for a user-specified city and displays it in a user-friendly console format. The app allows users to input a city name and receive a comprehensive five-day forecast with updates every three hours.
+
 The primary goals of this project were to:
-Gain experience in consuming APIs with Python (likely using libraries like requests).
-Practice data parsing and manipulation, likely working with JSON responses from the chosen weather API.
-Develop a user-friendly console interface for interacting with the application.
-Improve code organization and version control using Git.
+
+-Gain experience in consuming APIs with Python (likely using libraries like requests).
+-Practice data parsing and manipulation, likely working with JSON responses from the chosen weather API.
+-Develop a user-friendly console interface for interacting with the application.
+-Improve code organization and version control using Git.
+
 Here are some key Git commit messages that highlight the development process:
+
 Initial commit (potential message): "Project setup, basic structure, and API key configuration." (This sets the foundation for the project.)
+
 Fetch weather data (potential message): "Implemented core functionality to retrieve weather data from the API based on city input." (This marks a significant step towards functionality.)
+
 Data parsing (potential message): "Added code to parse the JSON response and extract relevant weather information." (This demonstrates data handling capabilities.)
+
 Output formatting (potential message): "Designed the console output to display weather data in a clear and readable manner." (This showcases user experience considerations.)
+
 Error handling (potential message, if implemented): "Implemented error handling for API requests and invalid city inputs." (This demonstrates robustness and user-friendliness.)
+
 User interface enhancements (potential message, if implemented): "Enhanced user experience with input validation and informative messages." (This shows a focus on user interaction.)
+
 Code refactoring (potential message): "Improved code readability and maintainability through refactoring." (This highlights code quality and maintainability improvements.)
 
 
@@ -41,18 +51,22 @@ examples for both languages.
 
 Java
 
-Iterator<Integer> iterator = Arrays.asList(1, 2, 3).iterator();
+// Create an iterator for a list containing integers 1, 2, and 3
+Iterator<Integer> iterator = Arrays.asList(1, 2, 3).iterator();    
 
+// Create an empty ArrayList to store the actual list of integers
 List<Integer> actualList = new ArrayList<>();
 
+// Add each element from the iterator to the actual list
 iterator.forEachRemaining(actualList::add);
 
 Python
 
 //using List comprehension
-
+# Create an iterable (range) containing numbers from 0 to 4 (5 exclusive)
 iterable = range(5)    
 
+# Use list comprehension to create a list (result_list) with the same elements as the iterable
 result_list = [item for item in iterable]    
 
 
@@ -61,11 +75,11 @@ Print "Hello World" in Java without using a semicolon. Explain your approach.
 
 ->
 
-public class HelloWorld {
+public class HelloWorld {         // Define a public class named HelloWorld
 
-    public static void main(String[] args) {
+    public static void main(String[] args) {       // The main method (entry point of the program)
     
-        if (System.out.printf("Hello World") == null) {
+        if (System.out.printf("Hello World") == null) {     // Check if the result of System.out.printf("Hello World") is null
         
         }
         
@@ -115,11 +129,11 @@ function reverseString(str) {
 
 // Example usage:
 
-const input = "Hello, World!";
+const input = "Hello, World!";       // Define a string variable 'input' with the value "Hello, World!"
 
-const reversed = reverseString(input);
+const reversed = reverseString(input);    // Call the 'reverseString' function with 'input' as an argument and store the result in 'reversed'
 
-console.log(reversed);  // Output: "!dlroW ,olleH"
+console.log(reversed);  // Output: "!dlroW ,olleH"   // Print the reversed string to the console
 
 Question 7: Generating Numbers from 1 to 100 
 Write Java or Python code to generate numbers from 1 to 100 using both an array and a 
@@ -132,11 +146,12 @@ Using Python Lists (Array):
 
 We can use the range() function to create a list of numbers from 1 to 100. Here’s the code:
 
-// Using range() and list() to create a list of numbers from 1 to 100
+#Using range() and list() to create a list of numbers from 1 to 100
 
-numbers_array = list(range(1, 101))
+numbers_array = list(range(1, 101))  # Create a list of numbers from 1 to 100 using the range() function
 
-print(numbers_array)
+print(numbers_array)    # Print the list of numbers
+
 
 Advantages:
 
@@ -152,37 +167,34 @@ Using Linked List (Naive Approach):
 
 We’ll create a linked list by appending each number to the end. Here’s the code:
 
-class Node:
 
+# Define a class named Node to represent individual nodes in the linked list
+class Node:
     def __init__(self, data):
-    
+        # Initialize a node with the given data
         self.data = data
-        
-        self.next = None
+        self.next = None  # Initialize the 'next' pointer to None (no next node)
 
 def create_linked_list(r1, r2):
+    # Create a linked list with nodes containing integers from r1 to r2 (inclusive)
+    root = Node(r1)  # Initialize the root node
+    current = root  # Set the current node to the root
 
-    root = Node(r1)
-    
-    current = root
-    
+    # Iterate from r1+1 to r2, creating nodes and linking them
     for i in range(r1 + 1, r2 + 1):
-    
-        current.next = Node(i)
-        
-        current = current.next
-        
-    return root
+        current.next = Node(i)  # Create a new node with data i
+        current = current.next  # Move the current pointer to the newly created node
+
+    return root  # Return the root of the linked list
 
 def display_linked_list(root):
-
+    # Traverse the linked list and print the data of each node
     while root:
-    
-        print(root.data, end=" -> ")
-        
-        root = root.next
-        
-    print("None")
+        print(root.data, end=" -> ")  # Print the data followed by an arrow
+        root = root.next  # Move to the next node
+
+    print("None")  # Print "None" to indicate the end of the linked list
+
 
 # Create a linked list from 1 to 100
 
@@ -236,8 +248,11 @@ If the square root is an integer, the number is a valid square number, so return
 
 Python Implementation:
 
+# Import the math module to use the sqrt() function
 import math
 
+
+# Define a function to check if a number is a valid perfect square
 def valid_square(number):
 
     # Step 1: Check if the number is non-negative
@@ -406,10 +421,10 @@ A module in Python is essentially a single Python file containing definitions an
 Example:
 ```python
 # math_module.py
-def add(x, y):
-    return x + y
+def add(x, y):                # Function to add two numbers (x and y)
+    return x + y         
 
-def subtract(x, y):
+def subtract(x, y):            # Function to subtract y from x
     return x - y
 ```
 
@@ -435,13 +450,19 @@ mypackage/
 # Importing a module
 import math_module
 
+# Calling the 'add' function from the 'math_module' with arguments 3 and 4
 result = math_module.add(3, 4)
+
+# Printing the result of the addition
 print(result)
 
-# Importing a module from a package
+# Importing a module from a package 
 import mypackage.module1
 
+# Calling the 'function_in_module1' function from 'module1'
 value = mypackage.module1.function_in_module1()
+
+# Printing the value returned by the function
 print(value)
 ```
 
