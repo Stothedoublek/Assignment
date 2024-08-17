@@ -57,12 +57,15 @@ examples for both languages.
 Java
 
 // Create an iterator for a list containing integers 1, 2, and 3
+
 Iterator<Integer> iterator = Arrays.asList(1, 2, 3).iterator();    
 
 // Create an empty ArrayList to store the actual list of integers
+
 List<Integer> actualList = new ArrayList<>();
 
 // Add each element from the iterator to the actual list
+
 iterator.forEachRemaining(actualList::add);
 
 Python
