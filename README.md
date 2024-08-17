@@ -34,7 +34,9 @@ Code refactoring (potential message): "Improved code readability and maintainabi
 
 Question 3: Converting an Iterator to a List 
 In both Java and Python, demonstrate how to convert an iterator to a list. Include code 
-examples for both languages. 
+examples for both languages.
+
+
 ->
 
 Java
@@ -50,6 +52,7 @@ result_list = [item for item in iterable]
 
 Question 4: Printing "Hello World" in Java 
 Print "Hello World" in Java without using a semicolon. Explain your approach.
+
 ->
 
 public class HelloWorld {
@@ -65,6 +68,7 @@ public class HelloWorld {
 
 Question 5: Bahmni Open-Source Research 
 Research Bahmni and summarize your findings here. 
+
 ->
 
  Bahmni is an award-winning, free, and open-source Electronic Medical Records (EMR) and Hospital Information System (HIS) designed for low-resource environments, clinics, NGOs, and governments.
@@ -91,6 +95,7 @@ Write a JavaScript function that reverses a given string. For example, inputting
 World!" should return "!dlroW ,olleH".
 
 ->
+
 function reverseString(str) {
     return str.split('').reverse().join('');      //split(''): Converts the string into an array of characters.
                                                     reverse(): Reverses the array of characters.
@@ -108,6 +113,7 @@ linked list. Compare the two approaches and discuss any advantages or disadvanta
 each.
 
 ->
+
 Using Python Lists (Array):
 We can use the range() function to create a list of numbers from 1 to 100. Here’s the code:
 
@@ -219,6 +225,7 @@ The function will return True for 36 because it is a valid square number.
 
 Question 9: Ozone-HIS Open-Source Research 
 Research Ozone-HIS and summarize your findings here. 
+
 ->
 
 Ozone-HIS (Health Information System) is an open-source, enterprise-grade electronic medical record (EMR) system built on OpenMRS 3. Designed for healthcare facilities, it is optimized for both point-of-care desktop and mobile use, ensuring that clinicians can efficiently manage medical records and clinical workflows.
@@ -235,7 +242,9 @@ Ozone-HIS is ideal for healthcare facilities looking for a scalable, open-source
 
 Question 10: Memory Allocation in OOP (Object-Oriented Programming) 
 Research memory allocation in OOP and summarize your findings here. 
+
 ->
+
 Memory allocation in Object-Oriented Programming (OOP) deals with managing how and where objects are stored during program execution. There are two main types of memory allocation in OOP: static and dynamic.
 
 1. Static Memory Allocation: This occurs when memory is allocated at compile time. For example, when you declare an array, the compiler reserves a fixed amount of memory that cannot be altered during runtime. This can lead to inefficiency if the reserved memory is not fully utilized.
@@ -252,6 +261,7 @@ Question 11: Research HL7 FHIR v5.0.0
 Research HL7 FHIR version 5 and summarize your findings here. 
 
 ->
+
 HL7 FHIR R5 is the latest version of the Fast Healthcare Interoperability Resources standard, designed to enhance data exchange and management within the healthcare industry. This version introduces significant improvements over its predecessors, aiming to address the evolving needs of healthcare providers and organizations.
 
 Key Features and Improvements
@@ -312,6 +322,7 @@ Question 13: Apache Superset Research
 Research Apache Superset and summarize your findings here. 
 
 ->
+
 Apache Superset is an open-source data exploration and visualization platform. It allows users to create interactive dashboards, charts, and graphs from various data sources. 
 
 Key features include:
@@ -340,6 +351,7 @@ Overall, Apache Superset is a powerful tool for data exploration and visualizati
 
 Question 14: Difference Between a Module and a Package in Python 
 Write about the differences between a module and a package in Python. 
+
 ->
 
 ## Modules vs. Packages in Python
