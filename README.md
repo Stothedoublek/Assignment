@@ -47,6 +47,7 @@ result_list = [item for item in iterable]
 
 Question 4: Printing "Hello World" in Java 
 Print "Hello World" in Java without using a semicolon. Explain your approach.
+->
 
 public class HelloWorld {
     public static void main(String[] args) {
@@ -61,6 +62,7 @@ public class HelloWorld {
 
 Question 5: Bahmni Open-Source Research 
 Research Bahmni and summarize your findings here. 
+->
 
  Bahmni is an award-winning, free, and open-source Electronic Medical Records (EMR) and Hospital Information System (HIS) designed for low-resource environments, clinics, NGOs, and governments.
 - Purpose and Features:
@@ -102,7 +104,7 @@ Write Java or Python code to generate numbers from 1 to 100 using both an array 
 linked list. Compare the two approaches and discuss any advantages or disadvantages of 
 each.
 
-
+->
 Using Python Lists (Array):
 We can use the range() function to create a list of numbers from 1 to 100. Here’s the code:
 
@@ -160,6 +162,8 @@ Question 8: Python valid_square() Function
 Given the number 36, describe the process of checking if it is a valid square number using 
 Python. 
 
+->
+
 To check if a given number (like 36) is a valid square number in Python, the process involves determining whether there exists an integer 
 𝑛
 n such that 
@@ -212,6 +216,7 @@ The function will return True for 36 because it is a valid square number.
 
 Question 9: Ozone-HIS Open-Source Research 
 Research Ozone-HIS and summarize your findings here. 
+->
 
 Ozone-HIS (Health Information System) is an open-source, enterprise-grade electronic medical record (EMR) system built on OpenMRS 3. Designed for healthcare facilities, it is optimized for both point-of-care desktop and mobile use, ensuring that clinicians can efficiently manage medical records and clinical workflows.
 
@@ -269,6 +274,8 @@ Overall, HL7 FHIR R5 represents a substantial step forward in healthcare interop
 
 Question 12: OpenHIE Open-Source Research 
 Research OpenHIE and summarize your findings here. 
+
+->
 
 OpenHIE is a global community working to improve the health of underserved populations through open and collaborative development of health information sharing architectures. It provides a reference architecture and workflow specifications for sharing health information between point-of-care systems in low-resource settings.
 
@@ -330,6 +337,7 @@ Overall, Apache Superset is a powerful tool for data exploration and visualizati
 
 Question 14: Difference Between a Module and a Package in Python 
 Write about the differences between a module and a package in Python. 
+->
 
 ## Modules vs. Packages in Python
 
