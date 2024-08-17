@@ -1,10 +1,11 @@
 # Assignment
-Assignment for Trainee Software Engineer
+Assignment for Trainee Software Engineer by Shubham Kushwaha
 
 Q.1 Explain why deletion is typically faster in a linked list compared to an array in Java.
 
 
 -> The possible reasons are: 
+
 1)In Java, deletion is typically faster in a linked list compared to an array due to the fundamental structural differences between the two data structures. 
 
 2)In a linked list, each node contains a reference to the next node, allowing for efficient removal of a node by simply updating the pointer of the previous node. This process does not require the reassignment of memory for all subsequent nodes, as it does with arrays.
