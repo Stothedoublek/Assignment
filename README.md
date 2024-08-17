@@ -130,9 +130,10 @@ World!" should return "!dlroW ,olleH".
 ->
 
 function reverseString(str) {
-    return str.split('').reverse().join('');      //split(''): Converts the string into an array of                                                     characters.
+
+    return str.split('').reverse().join('');      //split(''): Converts the string into an array of characters.
                                                     reverse(): Reverses the array of characters.
-                                                    join(''): Joins the reversed array back into a                                                      string.
+                                                    join(''): Joins the reversed array back into a string.
 }
 
 // Example usage:
@@ -176,35 +177,50 @@ Using Linked List (Naive Approach):
 We’ll create a linked list by appending each number to the end. Here’s the code:
 
 
-# Define a class named Node to represent individual nodes in the linked list
+#Define a class named Node to represent individual nodes in the linked list
+
 class Node:
+
     def __init__(self, data):
+    
         # Initialize a node with the given data
+        
         self.data = data
+        
         self.next = None  # Initialize the 'next' pointer to None (no next node)
 
 def create_linked_list(r1, r2):
+
     # Create a linked list with nodes containing integers from r1 to r2 (inclusive)
+    
     root = Node(r1)  # Initialize the root node
+    
     current = root  # Set the current node to the root
 
     # Iterate from r1+1 to r2, creating nodes and linking them
+    
     for i in range(r1 + 1, r2 + 1):
+    
         current.next = Node(i)  # Create a new node with data i
+        
         current = current.next  # Move the current pointer to the newly created node
 
     return root  # Return the root of the linked list
 
 def display_linked_list(root):
+
     # Traverse the linked list and print the data of each node
+    
     while root:
+    
         print(root.data, end=" -> ")  # Print the data followed by an arrow
+        
         root = root.next  # Move to the next node
 
     print("None")  # Print "None" to indicate the end of the linked list
 
 
-# Create a linked list from 1 to 100
+#Create a linked list from 1 to 100
 
 linked_list_root = create_linked_list(1, 100)
 
@@ -225,12 +241,13 @@ Disadvantages:
 In summary, using Python lists (arrays) is simpler and more memory-efficient for small ranges, while linked lists are better for large ranges or when memory constraints are critical.
 
 Question 8: Python valid_square() Function 
+
 Given the number 36, describe the process of checking if it is a valid square number using 
 Python. 
 
 ->
 
-To check if a given number (like 36) is a valid square number in Python, the process involves determining whether there exists an integer 
+#To check if a given number (like 36) is a valid square number in Python, the process involves determining whether there exists an integer 
 𝑛
 n such that 
 𝑛
