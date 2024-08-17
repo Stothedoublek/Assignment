@@ -40,13 +40,19 @@ examples for both languages.
 ->
 
 Java
+
 Iterator<Integer> iterator = Arrays.asList(1, 2, 3).iterator();
+
 List<Integer> actualList = new ArrayList<>();
+
 iterator.forEachRemaining(actualList::add);
 
 Python
+
 //using List comprehension
-iterable = range(5)    //
+
+iterable = range(5)    
+
 result_list = [item for item in iterable]    
 
 
