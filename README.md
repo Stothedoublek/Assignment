@@ -6,7 +6,9 @@ Q.1 Explain why deletion is typically faster in a linked list compared to an arr
 
 -> The possible reasons are: 
 1)In Java, deletion is typically faster in a linked list compared to an array due to the fundamental structural differences between the two data structures. 
+
 2)In a linked list, each node contains a reference to the next node, allowing for efficient removal of a node by simply updating the pointer of the previous node. This process does not require the reassignment of memory for all subsequent nodes, as it does with arrays.
+
 3)On the other hand, deletion in an array is a morecomplex process in Java as it involves allocating memory to the removed array entry and moving all the remaining elements in the array down one address.
 
 Certainly, here are some examples of how deletion is faster in a linked list compared to an array in Java:
