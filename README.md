@@ -68,10 +68,13 @@ iterator.forEachRemaining(actualList::add);
 Python
 
 //using List comprehension
-# Create an iterable (range) containing numbers from 0 to 4 (5 exclusive)
+
+#Create an iterable (range) containing numbers from 0 to 4 (5 exclusive)
+
 iterable = range(5)    
 
-# Use list comprehension to create a list (result_list) with the same elements as the iterable
+#Use list comprehension to create a list (result_list) with the same elements as the iterable
+
 result_list = [item for item in iterable]    
 
 
