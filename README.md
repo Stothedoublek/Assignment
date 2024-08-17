@@ -276,11 +276,11 @@ If the square root is an integer, the number is a valid square number, so return
 
 Python Implementation:
 
-# Import the math module to use the sqrt() function
+#Import the math module to use the sqrt() function
 import math
 
 
-# Define a function to check if a number is a valid perfect square
+#Define a function to check if a number is a valid perfect square
 def valid_square(number):
 
     # Step 1: Check if the number is non-negative
@@ -297,7 +297,7 @@ def valid_square(number):
     
     return sqrt_number.is_integer()
 
-# Example usage:
+#Example usage:
 
 number = 36
 
@@ -305,9 +305,13 @@ print(valid_square(number))  # Output: True
 
 
 Explanation:
+
 Step 1: The number 36 is non-negative, so we proceed.
+
 Step 2: The square root of 36 is 6.
+
 Step 3: 6 is an integer, so 36 is a valid square number.
+
 The function will return True for 36 because it is a valid square number.
 
 Question 9: Ozone-HIS Open-Source Research 
