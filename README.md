@@ -62,10 +62,15 @@ Print "Hello World" in Java without using a semicolon. Explain your approach.
 ->
 
 public class HelloWorld {
+
     public static void main(String[] args) {
+    
         if (System.out.printf("Hello World") == null) {
+        
         }
+        
     }
+    
 }
 
 1. The System.out.printf("Hello World") statement prints “Hello World” to the console.
@@ -103,14 +108,17 @@ World!" should return "!dlroW ,olleH".
 ->
 
 function reverseString(str) {
-    return str.split('').reverse().join('');      //split(''): Converts the string into an array of characters.
+    return str.split('').reverse().join('');      //split(''): Converts the string into an array of                                                     characters.
                                                     reverse(): Reverses the array of characters.
-                                                    join(''): Joins the reversed array back into a string.
+                                                    join(''): Joins the reversed array back into a                                                      string.
 }
 
 // Example usage:
+
 const input = "Hello, World!";
+
 const reversed = reverseString(input);
+
 console.log(reversed);  // Output: "!dlroW ,olleH"
 
 Question 7: Generating Numbers from 1 to 100 
@@ -121,55 +129,78 @@ each.
 ->
 
 Using Python Lists (Array):
+
 We can use the range() function to create a list of numbers from 1 to 100. Here’s the code:
 
 // Using range() and list() to create a list of numbers from 1 to 100
+
 numbers_array = list(range(1, 101))
+
 print(numbers_array)
 
 Advantages:
 
-Simple and concise.
-Efficient memory usage (only one object).
+-Simple and concise.
+
+-Efficient memory usage (only one object).
 
 Disadvantages:
 
-All elements are stored in memory at once.
+-All elements are stored in memory at once.
 
 Using Linked List (Naive Approach):
+
 We’ll create a linked list by appending each number to the end. Here’s the code:
 
 class Node:
+
     def __init__(self, data):
+    
         self.data = data
+        
         self.next = None
 
 def create_linked_list(r1, r2):
+
     root = Node(r1)
+    
     current = root
+    
     for i in range(r1 + 1, r2 + 1):
+    
         current.next = Node(i)
+        
         current = current.next
+        
     return root
 
 def display_linked_list(root):
+
     while root:
+    
         print(root.data, end=" -> ")
+        
         root = root.next
+        
     print("None")
 
 # Create a linked list from 1 to 100
+
 linked_list_root = create_linked_list(1, 100)
+
 display_linked_list(linked_list_root)
 
 Advantages:
 
-Dynamic memory allocation (only one element at a time).
-Efficient for large ranges.
+-Dynamic memory allocation (only one element at a time).
+
+-Efficient for large ranges.
+
 Disadvantages:
 
-More complex code.
-Traversing the linked list takes longer.
+-More complex code.
+
+-Traversing the linked list takes longer.
 
 In summary, using Python lists (arrays) is simpler and more memory-efficient for small ranges, while linked lists are better for large ranges or when memory constraints are critical.
 
@@ -208,18 +239,25 @@ Python Implementation:
 import math
 
 def valid_square(number):
+
     # Step 1: Check if the number is non-negative
+    
     if number < 0:
+    
         return False
     
     # Step 2: Calculate the square root
+    
     sqrt_number = math.sqrt(number)
     
     # Step 3: Check if the square root is an integer
+    
     return sqrt_number.is_integer()
 
 # Example usage:
+
 number = 36
+
 print(valid_square(number))  # Output: True
 
 
