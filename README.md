@@ -86,7 +86,7 @@ Print "Hello World" in Java without using a semicolon. Explain your approach.
 
 ->
 
-public class HelloWorld {         // Define a public class named HelloWorld
+public class HelloWorld {             //Define a public class named HelloWorld
 
     public static void main(String[] args) {       // The main method (entry point of the program)
     
