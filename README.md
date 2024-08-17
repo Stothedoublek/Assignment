@@ -4,13 +4,15 @@ Assignment for Trainee Software Engineer
 Q.1 Explain why deletion is typically faster in a linked list compared to an array in Java.
 
 
--> 
-In Java, deletion is typically faster in a linked list compared to an array due to the fundamental structural differences between the two data structures. In a linked list, each node contains a reference to the next node, allowing for efficient removal of a node by simply updating the pointer of the previous node. This process does not require the reassignment of memory for all subsequent nodes, as it does with arrays.
-On the other hand, deletion in an array is a morecomplex process in Java as it involves allocating memory to the removed array entry and moving all the remaining elements in the array down one address.
+-> The possible reasons are: 
+1)In Java, deletion is typically faster in a linked list compared to an array due to the fundamental structural differences between the two data structures. 
+2)In a linked list, each node contains a reference to the next node, allowing for efficient removal of a node by simply updating the pointer of the previous node. This process does not require the reassignment of memory for all subsequent nodes, as it does with arrays.
+3)On the other hand, deletion in an array is a morecomplex process in Java as it involves allocating memory to the removed array entry and moving all the remaining elements in the array down one address.
 
 Certainly, here are some examples of how deletion is faster in a linked list compared to an array in Java:
 
 -Suppose there is a singly linked list with five nodes, each containing a string representing a city (e.g., "New York", "London", "Paris", "Tokyo", and "Sydney").
+
 -In a linked list, deleting the node containing "Tokyo" requires only updating the 'next' pointer in the node before "Tokyo" to point to the node after "Sydney". This process does not require reassigning memory for any other nodes.
 
 Question 2: Project Explanation Describe a coding project you've worked on. Share the code repository where it is hosted, provide an overview of its purpose and goals, and highlight key Git commit messages that outline the development process. 
